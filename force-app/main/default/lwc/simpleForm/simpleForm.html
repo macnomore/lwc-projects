@@ -1,0 +1,41 @@
+<template>
+  <lightning-card>
+    <div class="slds-align_absolute-center">
+      <h1 slot="'title">Simple Form</h1>
+    </div>
+    <lightning-accordion active-section-name="A">
+      <lightning-accordion-section name="A" label="Accordion Title A">
+        <div class="slds-p-around_medium">
+          <lightning-input
+            type="text"
+            label="First name"
+            placeholder="type here..."
+          ></lightning-input>
+        </div>
+        <div class="slds-p-around_medium">
+          <lightning-input
+            type="text"
+            label="Middle name"
+            placeholder="type here..."
+          ></lightning-input>
+        </div>
+        <div class="slds-p-around_medium lgc-bg">
+          <lightning-input
+            type="text"
+            label="Last name"
+            placeholder="type here..."
+          ></lightning-input>
+        </div>
+      </lightning-accordion-section>
+      <lightning-accordion-section name="B" label="Accordion Title B">
+        <p>This is the content area for section B.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>The section height expands to fit your content.</p>
+      </lightning-accordion-section>
+    </lightning-accordion>
+
+    <p slot="footer">Thank you!</p>
+  </lightning-card>
+</template>
